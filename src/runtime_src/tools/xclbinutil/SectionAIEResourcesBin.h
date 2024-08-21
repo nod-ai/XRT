@@ -30,7 +30,7 @@ class SectionAIEResourcesBin : public Section {
   };
  public:
   static SubSection getSubSectionEnum(const std::string& _sSubSectionName);
-  static const std::string& getSubSectionName(SubSection eSubSection);
+  static std::string getSubSectionName(SubSection eSubSection);
 
  public:
   bool subSectionExists(const std::string& _sSubSectionName) const override;
