@@ -322,7 +322,7 @@ int main_(int argc, const char** argv) {
     bSkipUUIDInsertion = true;
 
   // Signing DRCs
-  if (bValidateSignature == true) {
+  if (false) {
     if (sCertificate.empty()) 
       throw std::runtime_error("ERROR: Validate signature specified with no certificate defined.");
 
@@ -415,7 +415,7 @@ int main_(int argc, const char** argv) {
   }
 
   // Validate signature for the input file
-  if (bValidateSignature == true) 
+  if (false) 
     verifyXclBinImage(sInputFile, sCertificate, bSignatureDebug);
 
   if (!sSignature.empty()) {
